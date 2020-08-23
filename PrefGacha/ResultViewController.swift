@@ -23,7 +23,7 @@ class ResultViewController: UIViewController {
     //navigationControllerを使用して画面遷移&値渡し
     @IBAction func searchOkashiButtonAction(_ sender: Any) {
         let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "OkashiView") as! OkashiViewController
-        nextVC.searchText = self.receiveText
+        nextVC.receiveText = self.receiveText
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
