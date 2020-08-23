@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         
         //ResultViewControllerのNavigationItemを"もう一度ガチャる"に変更する
@@ -48,6 +49,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var kyushuSwitch: UISwitch!
     @IBOutlet weak var gachaButton: UIButton!
     
+    //それぞれのスイッチがONのときに対応するswitchCnt[i]をtrueにする
     @IBAction func hokkaidoSwitchAction(_ sender: UISwitch) {
         if sender.isOn == true {
             switchCnt[0] = true

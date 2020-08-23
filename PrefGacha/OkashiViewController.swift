@@ -9,6 +9,7 @@
 import UIKit
 
 class OkashiViewController: UIViewController {
+    //ResultViewController.swiftから値を受け取るString型変数searchTextを宣言する
     var searchText: String?
 
     override func viewDidLoad() {
@@ -17,7 +18,6 @@ class OkashiViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
     /*
     // MARK: - Navigation
 

@@ -11,24 +11,30 @@ import UIKit
 class ResultViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
+    
+    //ViewController.swiftから値を受け取るString型変数receiveTextを宣言する
     var receiveText: String?
     
     @IBOutlet weak var resultImageView: UIImageView!
     var figureName: String!
     
     @IBOutlet weak var searchOkashiButton: UIButton!
+    
+    //navigationControllerを使用して画面遷移&値渡し
     @IBAction func searchOkashiButtonAction(_ sender: Any) {
         let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "OkashiView") as! OkashiViewController
         nextVC.searchText = self.receiveText
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
-    
+    //receiveTextからfigureNameを決定する
     func decideResultFigure() {
         switch receiveText {
+        //北海道
         case "北海道":
             figureName = "1_hokkaidou"
             
+        //東北
         case "青森県":
             figureName = "2_touhoku1__aomori"
         case "岩手県":
@@ -42,6 +48,7 @@ class ResultViewController: UIViewController {
         case "福島県":
             figureName = "2_touhoku6__fukushima"
         
+        //関東
         case "茨城県":
             figureName = "3_kantou1__ibaraki"
         case "栃木県":
@@ -56,7 +63,8 @@ class ResultViewController: UIViewController {
             figureName = "3_kantou6__tokyo"
         case "神奈川県":
             figureName = "3_kantou7__kanagawa"
-            
+       
+        //中部
         case "山梨県":
             figureName = "4_chuubu1_yamanashi"
         case "長野県":
@@ -76,6 +84,7 @@ class ResultViewController: UIViewController {
         case "岐阜県":
             figureName = "4_chuubu9_gifu"
             
+        //近畿
         case "三重県":
             figureName = "5_kinki1_mie"
         case "滋賀県":
@@ -91,6 +100,7 @@ class ResultViewController: UIViewController {
         case "和歌山県":
             figureName = "5_kinki7_wakayama"
         
+        //中国
         case "鳥取県":
             figureName = "6_chuugoku1_tottori"
         case "島根県":
@@ -101,7 +111,8 @@ class ResultViewController: UIViewController {
             figureName = "6_chuugoku4_hiroshima"
         case "山口県":
             figureName = "6_chuugoku5_yamaguchi"
-            
+          
+        //四国
         case "香川県":
             figureName = "7_shikoku1_kagawa"
         case "愛媛県":
@@ -111,6 +122,7 @@ class ResultViewController: UIViewController {
         case "高知県":
             figureName = "7_shikoku4_kouchi"
         
+        //九州
         case "福岡県":
             figureName = "8_kyuusyuu1_fukuoka"
         case "佐賀県":
@@ -142,6 +154,7 @@ class ResultViewController: UIViewController {
         decideResultFigure()
         resultImageView.image = UIImage(named: figureName)
         searchOkashiButton.setTitle("\(receiveText ?? "")のお菓子をみる", for: .normal)
+        
         //ResultViewControllerのNavigationItemを"戻る"に変更する
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "戻る", style: .plain, target: nil, action: nil)
     }
