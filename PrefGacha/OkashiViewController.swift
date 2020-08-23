@@ -9,6 +9,7 @@
 import UIKit
 
 class OkashiViewController: UIViewController {
+    var searchText: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()

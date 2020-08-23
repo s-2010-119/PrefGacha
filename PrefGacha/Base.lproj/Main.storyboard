@@ -25,35 +25,66 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tnx-iY-5I3">
                                 <rect key="frame" x="20" y="147" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="hokkaidoSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="T1E-OE-VcL"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5dW-GD-DPJ">
                                 <rect key="frame" x="184" y="147" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tohokuSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="9Fd-ou-sZW"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Iig-96-KQt">
                                 <rect key="frame" x="20" y="195" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="kantoSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="WgV-dT-9t4"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dKA-d4-k2p">
                                 <rect key="frame" x="184" y="195" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="chubuSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ra9-oS-mQI"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UC1-N2-33u">
                                 <rect key="frame" x="20" y="247" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="kinkiSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="o8Q-hA-npz"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A3a-Td-UzG">
                                 <rect key="frame" x="184" y="247" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="chugokuSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="sLN-tM-wv3"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EiP-8E-Kuc">
                                 <rect key="frame" x="20" y="301" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="shikokuSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="PCG-vx-av7"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1wK-Py-46d">
                                 <rect key="frame" x="184" y="301" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="kyushuSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="dyr-ne-5iv"/>
+                                </connections>
                             </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="北海道" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY0-Dk-Kdc">
+                                <rect key="frame" x="96" y="152" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="東北" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iU-4J-zgS">
                                 <rect key="frame" x="262" y="152" width="35" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -107,19 +138,26 @@
                                 <rect key="frame" x="20" y="340" width="374" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ガチャる！"/>
+                                <connections>
+                                    <action selector="gachaButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VV6-ew-bYN"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="北海道" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY0-Dk-Kdc">
-                                <rect key="frame" x="96" y="152" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="都道府県ガチャ" id="WYO-H7-x3X"/>
+                    <connections>
+                        <outlet property="chubuSwitch" destination="dKA-d4-k2p" id="nLb-H7-5F9"/>
+                        <outlet property="chugokuSwitch" destination="A3a-Td-UzG" id="qrg-0a-uEp"/>
+                        <outlet property="gachaButton" destination="CsP-wf-yyd" id="hSY-Lu-eSb"/>
+                        <outlet property="hokkaidoSwitch" destination="tnx-iY-5I3" id="fmB-7H-a8g"/>
+                        <outlet property="kantoSwitch" destination="Iig-96-KQt" id="qn6-Hm-2if"/>
+                        <outlet property="kinkiSwitch" destination="UC1-N2-33u" id="NMu-gW-Jj4"/>
+                        <outlet property="kyushuSwitch" destination="1wK-Py-46d" id="jvW-SL-kGI"/>
+                        <outlet property="shikokuSwitch" destination="EiP-8E-Kuc" id="yt6-zM-hfy"/>
+                        <outlet property="tohokuSwitch" destination="5dW-GD-DPJ" id="i0I-I4-lj8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,14 +190,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCD-6j-Sdx">
-                                <rect key="frame" x="184" y="346" width="46" height="30"/>
+                                <rect key="frame" x="20" y="346" width="374" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="searchOkashiButtonAction:" destination="C7T-2C-SUS" eventType="touchUpInside" id="Qum-Rj-b9h"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Yfk-pj-sC7"/>
                     </view>
+                    <connections>
+                        <outlet property="resultImageView" destination="uj6-lP-llL" id="w8y-pz-SaH"/>
+                        <outlet property="resultLabel" destination="s3M-Ua-eul" id="ko4-RY-LBC"/>
+                        <outlet property="searchOkashiButton" destination="jCD-6j-Sdx" id="D2Q-DT-A2k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NPG-r8-jCk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
