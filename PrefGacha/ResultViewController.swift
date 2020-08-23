@@ -90,7 +90,7 @@ class ResultViewController: UIViewController {
         case "滋賀県":
             figureName = "5_kinki2_shiga"
         case "京都府":
-            figureName = "5_kinki3_kyoto"
+            figureName = "5_kinki3_kyouto"
         case "大阪府":
             figureName = "5_kinki4_osaka"
         case "兵庫県":
