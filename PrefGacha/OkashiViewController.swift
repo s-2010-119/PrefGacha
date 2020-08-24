@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OkashiViewController: UIViewController, UITableViewDataSource {
+class OkashiViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     //ResultViewController.swiftから値を受け取るString型変数receiveTextを宣言する
     var receiveText: String?
@@ -26,6 +26,9 @@ class OkashiViewController: UIViewController, UITableViewDataSource {
         searchOkashi(keyword: searchText!)
         //Table ViewのdataSourceを設定
         tableView.dataSource = self
+        
+        //table Viewのdelegateを設定
+        tableView.delegate = self
     }
     
     @IBOutlet weak var tableView: UITableView!
@@ -181,7 +184,7 @@ class OkashiViewController: UIViewController, UITableViewDataSource {
         guard let req_url = URL(string: "https://sysbird.jp/toriko/api/?apikey=guest&format=json&keyword=\(keyword_encode)&max=1000&order=r") else {
             return
         }
-        print(req_url)
+        //print(req_url)
         
         //リクエストに必要な情報を生成
         let req = URLRequest(url: req_url)
@@ -256,6 +259,12 @@ class OkashiViewController: UIViewController, UITableViewDataSource {
         }
         //設定済みのCellオブジェクトを画面に反映
         return cell
+    }
+    
+    //cellが選択された際に呼び出されるdelegateメソッド
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //ハイライト解除
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     var alertController: UIAlertController!
