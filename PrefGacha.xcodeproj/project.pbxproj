@@ -15,6 +15,7 @@
 		C39D4E4124F118B300C8BC83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39D4E3F24F118B300C8BC83 /* LaunchScreen.storyboard */; };
 		C39D4E4924F11C4500C8BC83 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D4E4824F11C4500C8BC83 /* ResultViewController.swift */; };
 		C39D4E4B24F11D1100C8BC83 /* OkashiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D4E4A24F11D1100C8BC83 /* OkashiViewController.swift */; };
+		C3AC627724F392AA00CAA957 /* DetailOkashiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AC627624F392AA00CAA957 /* DetailOkashiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C39D4E4224F118B300C8BC83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C39D4E4824F11C4500C8BC83 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		C39D4E4A24F11D1100C8BC83 /* OkashiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkashiViewController.swift; sourceTree = "<group>"; };
+		C3AC627624F392AA00CAA957 /* DetailOkashiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOkashiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				C39D4E3824F118B300C8BC83 /* ViewController.swift */,
 				C39D4E4824F11C4500C8BC83 /* ResultViewController.swift */,
 				C39D4E4A24F11D1100C8BC83 /* OkashiViewController.swift */,
+				C3AC627624F392AA00CAA957 /* DetailOkashiViewController.swift */,
 				C39D4E3D24F118B300C8BC83 /* Assets.xcassets */,
 				C39D4E3F24F118B300C8BC83 /* LaunchScreen.storyboard */,
 				C39D4E4224F118B300C8BC83 /* Info.plist */,
@@ -148,6 +151,7 @@
 				C39D4E4B24F11D1100C8BC83 /* OkashiViewController.swift in Sources */,
 				C39D4E3524F118B300C8BC83 /* AppDelegate.swift in Sources */,
 				C39D4E3724F118B300C8BC83 /* SceneDelegate.swift in Sources */,
+				C3AC627724F392AA00CAA957 /* DetailOkashiViewController.swift in Sources */,
 				C39D4E4924F11C4500C8BC83 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

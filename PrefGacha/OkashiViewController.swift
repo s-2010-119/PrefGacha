@@ -181,7 +181,7 @@ class OkashiViewController: UIViewController, UITableViewDataSource, UITableView
         }
         
         //リクエストURLの組み立て
-        guard let req_url = URL(string: "https://sysbird.jp/toriko/api/?apikey=guest&format=json&keyword=\(keyword_encode)&max=1000&order=r") else {
+        guard let req_url = URL(string: "https://sysbird.jp/toriko/api/?apikey=guest&format=json&keyword=\(keyword_encode)&max=1000&sort=kana") else {
             return
         }
         //print(req_url)
@@ -265,6 +265,11 @@ class OkashiViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //ハイライト解除
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "DetailOkashiView") as! DetailOkashiViewController
+        nextVC.receiveName = self.okashiList[indexPath.row].name
+        nextVC.receiveImage = self.okashiList[indexPath.row].image
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
     var alertController: UIAlertController!
